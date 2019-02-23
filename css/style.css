@@ -1,3 +1,19 @@
+/* whole body details /
 body{
   background: rgb(172, 249, 249);
+  font-family:"Arial";
+  color: black;
+  text-align: center;
+  width: 800px;
 }
+h1 {
+  font-weight: bold;
+  font-size: 34 px;
+}
+h2 {
+  font-size: 26px;
+}
+.list {
+  padding-left: 30;
+}
+
