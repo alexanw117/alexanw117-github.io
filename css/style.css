@@ -25,6 +25,7 @@ h2 {
 }
 .intro {
   padding-left: 50px;
+  padding-right: 50px;
 }
 #allcontent {
   width: 800px;
@@ -36,4 +37,3 @@ h2 {
   margin-right: auto;
   margin-left: auto;
 }
-
