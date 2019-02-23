@@ -1,11 +1,5 @@
 /* whole body details */
 
-#allcontent {
-  width: 800px;
-  margin-right: auto;
-  margin-left: auto;
-  background: rgb(172, 249, 249);
-}
 body {
   background: black;
   font-family: Arial;
@@ -22,4 +16,10 @@ h2 {
 }
 .list {
   padding-left: 30px;
+}
+#allcontent {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgb(172, 249, 249);
 }
