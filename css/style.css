@@ -10,7 +10,6 @@ body {
   background: black;
   font-family: Arial;
   color: black;
-  padding-left: 50px;
 }
 h1 {
   font-weight: bold;
@@ -24,10 +23,14 @@ h2 {
 .list {
   padding-left: 60px;
 }
+.intro {
+  padding-left: 50px;
+}
 #allcontent {
   width: 800px;
   margin-right: auto;
   margin-left: auto;
   background: rgb(172, 249, 249);
 }
+
 
