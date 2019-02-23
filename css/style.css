@@ -1,9 +1,16 @@
 /* whole body details */
 
+#allcontent {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgb(172, 249, 249);
+}
 body {
   background: black;
   font-family: Arial;
   color: black;
+  padding-left: 50px;
 }
 h1 {
   font-weight: bold;
@@ -15,7 +22,7 @@ h2 {
   text-align: center;
 }
 .list {
-  padding-left: 30px;
+  padding-left: 60px;
 }
 #allcontent {
   width: 800px;
@@ -23,3 +30,4 @@ h2 {
   margin-left: auto;
   background: rgb(172, 249, 249);
 }
+
