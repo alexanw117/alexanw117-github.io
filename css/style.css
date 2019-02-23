@@ -1,17 +1,24 @@
 /* whole body details */
-body {
+
+#allcontent {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
   background: rgb(172, 249, 249);
+}
+body {
+  background: black;
   font-family: Arial;
   color: black;
-  text-align: center;
-  width: 800px;
 }
 h1 {
   font-weight: bold;
   font-size: 34px;
+  text-align: center;
 }
 h2 {
   font-size: 26px;
+  text-align: center;
 }
 .list {
   padding-left: 30px;
