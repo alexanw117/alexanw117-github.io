@@ -30,6 +30,11 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
+.description {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 #allcontent {
   width: 800px;
   margin-right: auto;
