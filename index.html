@@ -99,7 +99,16 @@
         <div class="description">
           
             <p>Here's a short video of my college journey so far.</p>
-          
+            
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        
+           <script>    
+             var c = document.getElementById("myCanvas");
+             var ctx = c.getContext("2d");
+             ctx.font = "30px Arial";
+             ctx.strokeText("Hello World", 10, 50);
+           </script>
+        
             <video width="320" height="240" controls>
               <source src="alexa_journey.mp4" type="video/mp4">
             </video>
