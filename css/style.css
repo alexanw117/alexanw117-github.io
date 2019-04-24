@@ -32,6 +32,10 @@ h2 {
 .description {
   text-align: center;
 }
+.usability {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 #allcontent {
   width: 1000px;
   margin-right: auto;
