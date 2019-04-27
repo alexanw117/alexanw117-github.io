@@ -34,17 +34,60 @@
 
       <div class="description">
          
-        <p>Guess a number 1-20</p>
-        <input type="text" name="userGuess">
-          
+        <p>Guess a number 1-20
+        <input type="text"  id="userGuess" >
+        <button type="button" id="checkNumber">Check Number</button> 
+          </p>
+      </div>      
+    </div>
          
-          
-         </div>
+     <script>
+       var randomNumber = Math.floor(Math.random() * 20) + 1;      
+       var maxGuesses = 7; 
+       var userAttempts = 0;
+
+       function checkNumber() {
+
+         var userGuess = document.getElementById("userGuess").value;
+         var userGuessNumeric;
+
+
          
-          
-        
-  </div>
-  
+         if (userGuess === ""){
+           alert("Enter a Number");
+           return;  
+         };
+         userGuessNumeric = Number(userGuess);
+         
+         if (isNaN(userGuessNumeric)){
+           alert("Numbers only");
+           return;  
+         };
+         userAttempts = userAttempts + 1;
+         while (userAttempts < maxGuesses){
+           if (userGuessNumeric < randomNumber){
+             alert("Too low");
+             return;
+           }
+           else if (userGuessNumeric > randomNumber){
+             alert("Too high");
+             return;
+           }
+           else { 
+             alert("Correct!");
+             return;
+           }
+         }
+         if (userAttempts >= maxGuesses){
+           alert("Out of tries. Refresh the page to play again");
+             }
+       }
+
+       document.getElementById("checkNumber").onclick = 
+       function(){
+         checkNumber();
+       }
+     </script>     
 </body>
 
 </html>
