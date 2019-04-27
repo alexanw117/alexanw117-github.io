@@ -6,6 +6,8 @@ body {
   font-family: Arial;
   color: black;
 }
+
+/*Header 1 at top of page*/
 h1 {
   font-weight: bold;
   font-size: 34px;
@@ -13,31 +15,45 @@ h1 {
   padding-top: 30px;
   padding-bottom: 0px;
 }
+
+/*Section headers*/
 h2 {
   font-size: 26px;
   text-align: center;
 }
+
+/*Bulleted lists*/
 .list {
   padding-left: 60px;
 }
+
+/*About me section*/
 .intro {
   padding-left: 50px;
   padding-right: 50px;
 }
+
+/*Images*/
 .pic {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+/*Canvas and slide show*/
 .description {
   text-align: center;
 }
+
+/*Usability section*/
 .usability {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+/*Format for entire web page*/
 #allcontent {
   width: 1000px;
   margin-right: auto;
