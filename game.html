@@ -17,14 +17,14 @@
 
 <body>
   
-  <!--div "allcontent" to format all content--> 
+<!--div "allcontent" to format all content--> 
   
   <div id="allcontent">
 
     <h1>JavaScript Number Game</h1>
     
       
-      <!-- SVG line border-->
+<!-- SVG line border-->
       
       <svg width="1000" height="5">
         <rect width="1000" height="5" style="fill:black;stroke-width:10;stroke:rgb(0,0,0)" />
@@ -32,26 +32,33 @@
   
 
 
-
+      <div class="description">
          
         <p>Guess a number 1-20
         <input type="text"  id="userGuess" >
         <button type="button" id="checkNumber">Check Number</button> 
           </p>
-    
+          
+      </div> 
+      
     </div>
          
      <script>
+         
+//Declare global variables
+         
        var randomNumber = Math.floor(Math.random() * 20) + 1;      
        var maxGuesses = 7; 
        var userAttempts = 0;
 
        function checkNumber() {
 
+//Declare local variables           
+
          var userGuess = document.getElementById("userGuess").value;
          var userGuessNumeric;
-
-
+       
+//Check for empty input           
          
          if (userGuess === ""){
            alert("Enter a Number");
@@ -59,11 +66,17 @@
          };
          userGuessNumeric = Number(userGuess);
          
+//Check if not a number           
+           
          if (isNaN(userGuessNumeric)){
            alert("Numbers only");
            return;  
          };
+           
          userAttempts = userAttempts + 1;
+           
+//Alert user if too high, too low, or correct           
+           
          while (userAttempts < maxGuesses){
            if (userGuessNumeric < randomNumber){
              alert("Too low");
@@ -74,20 +87,27 @@
              return;
            }
            else { 
-             alert("Correct! Refresh the page to play again.");
+             alert("Correct!");
              return;
            }
          }
+           
+//If user guesses exceeds maximum, end game           
+           
          if (userAttempts >= maxGuesses){
-           alert("Out of tries. Refresh the page to play again.");
+           alert("Out of tries. Refresh the page to play again");
              }
        }
 
+//When button clicked, run checkNumber function         
+         
        document.getElementById("checkNumber").onclick = 
        function(){
          checkNumber();
        }
-     </script>     
+       
+     </script>  
+    
 </body>
 
 </html>
